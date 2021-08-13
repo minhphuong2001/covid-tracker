@@ -24,6 +24,7 @@ export default function CountrySelector({ country, value, handleChange }) {
                         name: 'conutry',
                         id: 'country-selector'
                     }}
+                    style={{marginTop: 20}}
                 >
                     {
                         country.map((item, index) => {
@@ -32,8 +33,8 @@ export default function CountrySelector({ country, value, handleChange }) {
                             )
                         })
                     }
-                    <FormHelperText>Lựa chọn quốc gia</FormHelperText>
                 </NativeSelect>
+                <FormHelperText>Lựa chọn quốc gia</FormHelperText>
             </FormControl>
         </div>
     )
